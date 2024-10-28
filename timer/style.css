@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat';
+    font-weight: 500;
+}
+
+body{
+    background-color: #222;
+    color: #ffffff;
+}
+
+.container{
+    margin: 100px auto 0;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    width: 550px;
+}
+
+h1{
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.tablo{
+    display: flex;
+    justify-content: center; 
+    gap: 30px;
+    margin: 30px auto;
+}
+
+.time{
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btnWrap{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+button{
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    border: 1px;
+}
+
+img{
+  height: 100%;  
+} 
+
+button:disabled{
+    background-color: #aaa;
+    box-shadow: inset 3px 3px 3px #555;
+}
+
+button:hover{
+    background-color: #aaa;
+    transition: background-color 0.3s;
+}
+
+
+@media screen and (max-width: 600px){
+
+    .container{
+        width: 350px;
+    }
+
+    h1{
+        font-size: 30px;
+        margin: 20px;
+    }
+
+    .time{
+        font-size: 10px;
+        width: 65px;
+    }
+
+    .tablo{
+        margin: 15px;
+    }
+
+    .btnWrap{
+        margin: 15px;
+    }
+    
+    button{
+        height: 35px;
+        width: 35px;
+    }
+}
+    
